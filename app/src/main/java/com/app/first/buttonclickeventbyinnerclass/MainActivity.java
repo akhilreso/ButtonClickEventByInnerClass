@@ -10,7 +10,7 @@ import android.widget.TextView;
 import static com.app.first.buttonclickeventbyinnerclass.R.*;
 
 public class MainActivity extends AppCompatActivity {
-
+    int counter=0;
     Button button;
     Button button2;
     TextView text;
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
                   public void onClick(View v) {
-
-                text.setText("you clicked button1");
+                 counter++
+                text.setText(counter);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
